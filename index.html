@@ -7,7 +7,7 @@
     <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://css.gg/css' rel='stylesheet'>
     <script src="script.js" defer></script> <!-- defer faz os arquivos gerarem apos o html-->
 </head>
 <body>
@@ -17,12 +17,54 @@
         </header>
         <form id="todo-form">
             <p>Adicione a sua tarefa: </p>
-        </form>
         <div class="form-control">
             <input type="text" id="todo-input" placeholder="O que você vai fazer?">
             <button type="submit">
-                <i class="fa-thin fa-plus"></i>
+                <i class="gg-math-plus"></i>
             </button>
+           </form>
+           <form id="edit-form">
+            <p>Edite a sua tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="edit-input">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+
+                </button>
+            </div>
+            <button id="cancel-edit-bnt">Cancelar</button>
+           </form>
+           <div id="toolbar">
+            <h4>Pesquisar</h4>
+            <form action="">
+                <input type="text" id="search-input" placeholder="Buscar">
+                <button id="erase-button">
+                  <i class="fa-solid fa-delete-left"></i>
+                </button>
+            </form>
+           </div>
+           <div id="filter">
+                 <h4>Filtrar</h4>
+                 <select name="" id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                 </select>
+           </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo">
+             <h3>Estudar javascript</h3>
+             <button class="finish-todo">
+                <i class="fa-solid fa-check"></i>
+             </button>
+             <button class="edit-todo">
+                <i class="fa-solid fa-pen"></i>
+             </button>
+             <button class="remove-todo">
+                <i class="fa-solid fa-xmark"></i>
+             </button>
+            </div>
 
         </div>
     </div>
