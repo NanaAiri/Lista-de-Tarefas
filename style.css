@@ -60,11 +60,13 @@ input, select {
     background-color: #fdfdfd;
     padding: 1.5rem;
     border-radius: 15px;
+    
 }
 .todo-container header {
     text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
+    
 }
 /* Todo Form */
 #todo-form, #edit-form {
@@ -80,6 +82,9 @@ input, select {
 
 .form-control {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .form-control input {
@@ -88,3 +93,4 @@ input, select {
 #cancel-edit-btn {
     margin-top: 1rem;
 }
+
